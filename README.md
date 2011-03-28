@@ -16,6 +16,10 @@ socket specified. For instance, using netcat wrapped in readline:
 
     rlwrap nc -U /tmp/minecraft
 
+(For accessing Minecraft servers that are wrapped in anyconsole, I've written
+[lolmc](https://github.com/Mortal/lolmc) as a front-end to this UNIX socket for
+Node.js scripts.)
+
 The last 30 lines of output from the command will be shown immediately, and
 output from the process is line-buffered and sent to the UNIX socket clients on
 each newline. This is approximately equivalent to
